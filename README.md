@@ -75,20 +75,20 @@ The dataset has been processed into training and testing sets (`traindata_proces
 - **Advanced Models**: Random Forest, Gradient Boosting, XGBoost, and LightGBM.
  
 - Addressed class imbalance with **SMOTE**, improving F1-scores.
-- Selected **XGBoost** with the top 11 features for final evaluation.
+- Selected **Random Forest** with the top 10 features for final evaluation.
 
  
 ---
 
 ### 3. **Hyperparameter Tuning**
-- Optimized `XGBoost` hyperparameters using **RandomizedSearchCV**.
-- Tuned parameters included `max_depth`, `learning_rate`, and `n_estimators`.
+- Optimized `Random forest classifier` hyperparameters using **RandomizedSearchCV**.
+- Tuned parameters included `max_depth` and `n_estimators`.
 
 
 ---
 
 ### 4. **Feature Importance**
-- Identified top features with **SHAP**, including `OrgId`, `IncidentId`, `DetectorId`, and more.
+- Identified top features with **Feature analysis**, including `OrgId`, `IncidentId`, `DetectorId`, and more.
 - Used these features to improve computational efficiency and model accuracy.
 
   
@@ -124,7 +124,7 @@ The dataset has been processed into training and testing sets (`traindata_proces
 - Machine Learning: 
   - `scikit-learn` (Logistic Regression, Decision Trees, Random Forest)
   - `imbalanced-learn` (SMOTE)
-- Feature Analysis: `Feature_importance in Random Forest`
+- Feature Analysis: `Feature_score in Random Forest`
 
 ### Dataset
 - Microsoft GUIDE Dataset (processed into `traindata_processed.csv` and `testdata_processed.csv`)
